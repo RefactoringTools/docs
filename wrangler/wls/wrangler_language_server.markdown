@@ -140,11 +140,15 @@ To make a refactoring available through LSP, create a new Code Action module pre
 
 Register the code action in `wls_code_actions:available_actions/0`
 
-To understand how ELS Code Lenses works, see this article: [How to: Code Lenses](https://erlang-ls.github.io/articles/tutorial-code-lenses/). Code Actions has a similar behaviour.
+You can see several examples for this in the projecc. For example, `wls_code_action_generalise_fun.erl` that implements the generalise refactoring.
+
+Alternatively, to understand how ELS Code Lenses works, see this article: [How to: Code Lenses](https://erlang-ls.github.io/articles/tutorial-code-lenses/). Code Actions has a similar behaviour.
 
 
 ### Wrangler forms
 
-For complex refactorings (eg. fold), Wrangler forms are introduced.
+For refactorings that need more complex io (eg. fold), Wrangler forms are introduced.
 
-The form's state are handled by `wls_server`.
+To make these forms, highlight, semantic token and code lens LSP features are used.
+
+The form's state are handled by `wls_server` that can be extended with more of these refactorings.
