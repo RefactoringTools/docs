@@ -4,7 +4,8 @@
 
 <img align="right"  width="200px" style="vertical-align:middle;margin:0px 20px" src="wrangler.png">
 
-Wrangler is an interactive refactoring tool for Erlang, integrated into emacs and Eclipse.
+Wrangler is an interactive refactoring tool for Erlang, integrated into Visual Studio Code and other LSP-compliant editors as the 
+[Wrangler language server](wls/wrangler_language_server), as well as emacs and Eclipse.
 
 The refactorings in Wrangler cover structural changes such as function, variable and module renaming, function extraction and generalisation. Wrangler recognises macros in code, and can be used on a single file or across a whole project.
 
