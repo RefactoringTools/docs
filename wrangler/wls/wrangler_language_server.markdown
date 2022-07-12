@@ -25,7 +25,7 @@ wrangler:
     - "new-fun"
     - "new-macro"
     - "new-var"
-    - "rename-fun2"
+    - "rename-fun"
     - "rename-var"
 
 ```
@@ -76,7 +76,7 @@ Introduce a new function definition to represent a selected expression sequence 
 ### New macro - `new-macro`
 Define a macro to represent a selected sequence of expressions.
 
-### Rename function - `rename-fun2`
+### Rename function - `rename-fun`
 Rename a function.
 
 ### Rename variable - `rename-var`
@@ -105,7 +105,7 @@ User inputs (eg. asking for a new variable name) are handled by a middleware in 
 
 To request an input from the user, add the following attribute to the command arguments (`text` field  is not required):
 
-```user_input => #{'type' => variable|atom|file, 'text' => <<"Placeholder text">>}``` 
+```user_input => #{'type' => variable|atom|macro|file, 'text' => <<"Placeholder text">>}``` 
 
 On successful inputs, a `value` field will be added to the `user_input` with the given value.
 
