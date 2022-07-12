@@ -55,7 +55,7 @@ Details about installing and getting started with Wrangler are [here](getting-st
 
 - [Publications](publications.html)
 - [The RELEASE project](http://www.release-project.eu/) 
-- [HaRe: the Haskell refactorer](http://www.cs.kent.ac.uk/projects/refactor-fp/hare.html) UPDATE
+- [HaRe: the Haskell refactorer](https://github.com/RefactoringTools/HaRe)
 - [Simon Thompson](http://www.cs.kent.ac.uk/people/staff/sjt/) 
 
 
