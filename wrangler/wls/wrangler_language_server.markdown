@@ -16,7 +16,7 @@ You can read more about Wrangler in the [Wrangler documentation](https://refacto
 wrangler:
   enabled: true
   path: "/path/to/wrangler/ebin" 
-  tab_with: 8
+  tab_width: 8
   enabled_refactorings:
     - "comment-out-spec"
     - "fold-expression"
