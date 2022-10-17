@@ -32,7 +32,7 @@ wrangler:
 ```
 - Only `enabled` and `enabled_refactorings` are required properties.
 - `path` can be omitted if Wrangler is added to the PATH environment variable.
-- The folders in `search_paths` will be checked if a refactoring may change multiple files in a project. The default value is the project directory. It is recommended to narrow down the search space for large projects.
+- The folders in `search_paths` will be checked once a refactoring needs to change multiple files in a project. The default value is the project directory. It is recommended to narrow down the search space for large projects.
 
 # Usage
 
