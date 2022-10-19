@@ -15,9 +15,19 @@ Finally, you can take a look at the videos about Wrangler, available from the [h
 
 ## Installation
 
-### With Emacs in Mac OS X and Linux
+### With Erlang-LS (VS Code, Sublime, IntelliJ and others)
+
+Follow the guide of the [Wrangler Language Server](wls/wrangler_language_server)
+
+### Mac OS X and Linux
 
 Follow the INSTALL file from the repository.
+
+### Windows
+
+[Download installer](https://github.com/downloads/RefactoringTools/wrangler/Wrangler_Setup.exe) 
+
+(currently outdated)
 
 ### Running Wrangler in Emacs
 
@@ -31,15 +41,9 @@ To undo any refactoring type
 
 To configure the search directories, select the `Customize Wrangler` menu option.
 
-### With Emacs in Windows
+On Windows, Erlang release R14/above are required 
 
-Requires Erlang release R14 and above + Emacs 
-
-[Download installer](https://github.com/downloads/RefactoringTools/wrangler/Wrangler_Setup.exe) 
-
-No more action required. 
-
-### Eclipse + ErlIDE
+### Running Wrangler in Eclipse + ErlIDE
 
 On Windows systems, use a path with no spaces in it.
 

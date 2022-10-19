@@ -10,13 +10,15 @@ You can read more about Wrangler in the [Wrangler documentation](https://refacto
 
 2. [Install the Erlang Language Server](https://erlang-ls.github.io/getting-started/overview/) in your chosen text editor.
 
-3. Modify the [erlang_ls.config](https://erlang-ls.github.io/configuration/) file:
+3. Modify the [erlang_ls.config](https://erlang-ls.github.io/configuration/) file. Example:
 
 ```
+...
 wrangler:
   enabled: true
   path: "/path/to/wrangler/ebin" 
   tab_width: 8
+  search_paths: ["folder/where/you/use/refactorings"]
   enabled_refactorings:
     - "comment-out-spec"
     - "fold-expression"
@@ -27,8 +29,11 @@ wrangler:
     - "new-var"
     - "rename-fun"
     - "rename-var"
-
 ```
+- Only `enabled` and `enabled_refactorings` are required properties.
+- `path` can be omitted if Wrangler is added to the PATH environment variable.
+- The folders in `search_paths` will be checked once a refactoring needs to change multiple files in a project. The default value is the project directory. It is recommended to narrow down the search space for large projects.
+
 # Usage
 
 ## General case: 
