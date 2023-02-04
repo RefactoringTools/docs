@@ -29,6 +29,7 @@ wrangler:
     - "new-var"
     - "rename-fun"
     - "rename-var"
+    - "inline-var"
 ```
 - Only `enabled` and `enabled_refactorings` are required properties.
 - `path` can be omitted if Wrangler is added to the PATH environment variable.
@@ -65,6 +66,9 @@ This can be initiated by a code lens at the beginning of the file:\
 
 ### Fold expression - `fold-expression`
 With Wrangler form, replace instances of the function body by the corresponding function definition. 
+
+### Inline variable - `inline-var`
+With Wrangler form, replace instances of a variable with its corresponding value.
 
 ### Generalise function - `generalise-fun`
 Refactor the highlighted expression as the function's new argument. 
